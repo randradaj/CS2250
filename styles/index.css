@@ -22,8 +22,6 @@ hr {
 
 .img-container img {
   display: flex;
-  height: 50%;
-  width: 50%;
 }
 
 .about-me {
@@ -38,64 +36,73 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
-    .about-me .about-me-list {
-        padding-left: 40px;
-        position: relative;
-        background-color: black;
-      }
-      
-      .about-me .about-me-list h3 {
-        position: relative;
-        color: white;
-        font-weight: 500;
-        letter-spacing: 1px;
-      }
-      
-      .about-me .about-me-list ul {
-        position: relative;
-        list-style-type: none;
-        padding: 0;
-      }
-      
-      .about-me .about-me-list ul li {
-        margin: 4px;
-        position: relative;
-        left: 0;
-        color: lightgray;
-        border-left: 2px solid lightslategray;
-        transition: 0.5s;
-        cursor: pointer;
-        width: fit-content;
-      }
-      
-      .about-me .about-me-list ul li::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: white;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: 0.5s;
-      }
-      
-      .about-me .about-me-list ul li:hover::before {
-        transform: scaleX(1);
-      }
-      
-      .about-me .about-me-list ul li:hover {
-        left: 15px;
-      }
-      
-      .about-me .about-me-list ul li span {
-        position: relative;
-        padding: 8px;
-        display: inline-block;
-        z-index: 1;
-        transition: 0.5s;
-      }
-      
-      .about-me .about-me-list ul li:hover span {
-        color: black;
-      }
+  .about-me .about-me-list {
+    padding-left: 40px;
+    position: relative;
+    background-color: black;
+  }
+
+  .about-me .about-me-list h3 {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .about-me .about-me-list ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .about-me .about-me-list ul li {
+    margin: 4px;
+    position: relative;
+    left: 0;
+    color: lightgray;
+    border-left: 2px solid lightslategray;
+    transition: 0.5s;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .about-me .about-me-list ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+  }
+
+  .about-me .about-me-list ul li:hover::before {
+    transform: scaleX(1);
+  }
+
+  .about-me .about-me-list ul li:hover {
+    left: 15px;
+  }
+
+  .about-me .about-me-list ul li span {
+    position: relative;
+    padding: 8px;
+    display: inline-block;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  .about-me .about-me-list ul li:hover span {
+    color: black;
+  }
+}
+
+.links h4 {
+  margin: 0;
+  padding-left: 15px;
+}
+
+footer nav ul li:nth-child(2) {
+  padding-top: 10px;
 }
