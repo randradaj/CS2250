@@ -3,78 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles/index.css" />
-    <title>CS2250 Assignment 1</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>CS2250 Assignment 3 - Calculator</title>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-
   <body>
-    <div class="title-container">
-      <h1>Ryan Andrada's Website</h1>
+    <div class="title">
+      <h1>CS2250 Assignment 3 Calculator</h1>
     </div>
-    <hr />
-    <div class="img-container">
-      <img class="self-image" src="assets/self.jpg" alt="image of me" />
-    </div>
-
-    <div class="about-me">
-      <h2>A Little Bit About Me:</h2>
-      <p>
-        I was born and raised in California and am an only-child. I'm fully
-        Filipino (at least as far as I know).
-      </p>
-
-      <p>
-        I'm currently studying Computer Science at Cal Poly Pomona. Funnily
-        enough, a lot of relatives have studied at CPP when they were around my
-        age (I guess it runs in the family lol).
-      </p>
-
-      <div class="about-me-list">
-        <h3>Some of my favorite foods!</h3>
-        <ul>
-          <li><span>White Rice</span></li>
-          <li><span>Kimchi Fried Rice</span></li>
-          <li><span>Curry</span></li>
-          <li><span>Bacon</span></li>
-          <li><span>Karaage</span></li>
-          <li><span>Hamburg Steaks</span></li>
-          <li><span>Orange Chicken</span></li>
-          <li><span>Chow Mein</span></li>
-        </ul>
+    <div class="calculator-container">
+      <div class="screen">
+        <div id="output"></div>
       </div>
-
-      <h5>My Top 3 Restaurants:</h5>
-      <ol>
-        <li>
-          <a href="https://bbqchicken.com/">bb.q Chicken</a>
-        </li>
-        <li>
-          <a
-            href="https://www.doordash.com/store/tasty-goody-west-covina-441155/"
-            >Tasty Goody</a
-          >
-        </li>
-        <li>
-          <a href="https://www.numerounopizzadelivery.com/">Numero Uno Pizza</a>
-        </li>
-      </ol>
-    </div>
-
-    <footer>
-      <div class="links">
-        <h4>Click one of the links below!</h4>
-        <nav>
-          <ul>
-            <li>
-              <a href="/index.html">Home</a>
-            </li>
-            <li>
-              <a href="/ranks.html">My Favorite Games</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="buttons">
+        <table>
+          <tr>
+            <td><button class="number-btn">7</button></td>
+            <td><button class="number-btn">8</button></td>
+            <td><button class="number-btn">9</button></td>
+            <td><button id="addition-btn" class="operation-btn">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="number-btn">4</button></td>
+            <td><button class="number-btn">5</button></td>
+            <td><button class="number-btn">6</button></td>
+            <td>
+              <button id="subtraction-btn" class="operation-btn">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="number-btn">1</button></td>
+            <td><button class="number-btn">2</button></td>
+            <td><button class="number-btn">3</button></td>
+            <td>
+              <button id="multiplication-btn" class="operation-btn">x</button>
+            </td>
+          </tr>
+          <tr>
+            <td><button id="clear-btn" class="clear-btn">C</button></td>
+            <td><button class="number-btn">0</button></td>
+            <td><button id="equals-btn" class="number-btn">=</button></td>
+            <td><button id="division-btn" class="operation-btn">/</button></td>
+          </tr>
+        </table>
       </div>
-    </footer>
+    </div>
+    <script>
+      src = "script.js";
+    </script>
   </body>
 </html>

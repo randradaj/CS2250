@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #234e70;
+}
+
+.title {
+    position: absolute;
+    top: 1px;
+    color: white;
+}
+
+.calculator-container {
+  border: solid 10px black;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #c0c0c0;
+
+  .screen {
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+
+    #output {
+      margin: 35px 15px;
+      background-color: white;
+      height: 75px;
+      width: 15px;
+      color: white;
+      animation: blink 1s step-end infinite;
+    }
+  }
+
+  .buttons {
+    padding-top: 20px;
+
+    .number-btn,
+    .operation-btn,
+    .clear-btn {
+      border: none;
+      border-radius: 12px;
+      color: white;
+      width: 100px;
+      height: 125px;
+      font-size: 35px;
+      margin: 5px;
+    }
+
+    .number-btn,
+    .clear-btn {
+      background-color: #282828;
+    }
+
+    .operation-btn {
+      background-color: orange;
+    }
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
