@@ -7,12 +7,14 @@ body {
 }
 
 .title {
-    position: absolute;
-    top: 1px;
-    color: white;
+  position: absolute;
+  top: 1px;
+  color: white;
+  font-size: 10px;
 }
 
 .calculator-container {
+  display: grid;
   border: solid 10px black;
   border-radius: 10px;
   padding: 15px;
@@ -20,16 +22,28 @@ body {
 
   .screen {
     background-color: black;
-    height: 150px;
+    height: 85px;
     display: flex;
     justify-content: end;
     margin-top: 10px;
+    max-width: 218px;
 
     #output {
-      margin: 35px 15px;
+      display: inline-block;
+      color: white;
+      font-size: 25px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-right: 5px;
+      word-wrap: break-word;
+      max-width: 190px;
+    }
+
+    #cursor {
+      margin: 25px 10px 25px 0;
       background-color: white;
-      height: 75px;
-      width: 15px;
+      height: 35px;
+      width: 5px;
       color: white;
       animation: blink 1s step-end infinite;
     }
@@ -40,23 +54,31 @@ body {
 
     .number-btn,
     .operation-btn,
-    .clear-btn {
+    #clear-btn,
+    #equals-btn {
       border: none;
       border-radius: 12px;
       color: white;
-      width: 100px;
-      height: 125px;
-      font-size: 35px;
+      width: 40px;
+      height: 65px;
+      font-size: 25px;
       margin: 5px;
     }
 
-    .number-btn,
-    .clear-btn {
+    .number-btn {
       background-color: #282828;
     }
 
     .operation-btn {
       background-color: orange;
+    }
+
+    #clear-btn {
+      background-color: red;
+    }
+
+    #equals-btn {
+      background-color: green;
     }
   }
 }
@@ -68,5 +90,47 @@ body {
   }
   50% {
     background-color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .calculator-container {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .calculator-container {
+    .screen {
+      height: 150px;
+      max-width: 458px;
+
+      #output {
+        font-size: 70px;
+        font-weight: 600;
+        margin-top: 30px;
+        max-width: 404px;
+      }
+
+      #cursor {
+        margin: 35px 15px;
+        height: 75px;
+        width: 15px;
+      }
+    }
+
+    .buttons {
+      .number-btn,
+      .operation-btn,
+      #clear-btn,
+      #equals-btn {
+        width: 100px;
+        height: 125px;
+      }
+    }
   }
 }
